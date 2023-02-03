@@ -1,0 +1,52 @@
+{{>header}}
+<link rel="stylesheet" href="style.css">
+
+<style>
+  h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+<h2>REGISTER HERE</h2>
+<div class="center">
+  <form method="post">
+    <!-- name input -->
+    <div class="form-outline mb-4" class="active">
+      <label class="form-label" for="form2Example1">NAME</label>
+      <input type="name" id="form2Example1" class="form-control" name="name" value="" />
+
+    </div><br>
+    <!-- Email input -->
+    <div class="form-outline mb-4" class="active">
+      <label class="form-label" for="form2Example1">Emailaddress</label>
+
+      <input type="email" id="form2Example1" class="form-control" name="email" value="" />
+    </div><br>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form2Example2">Password</label>
+
+      <input type="password" id="form2Example2" class="form-control" name="password" value="" />
+    </div><br>
+
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+      </div>
+    </div>
+    <button type="Register" class="btn btn-primary btn-lg">Register</button>
+</div>
+</div>
+</form>
+<div>
+  <p>ALREADY REGISTRED PLS LOGIN HERE <a href="/login">click for login</a></p>
+</div>

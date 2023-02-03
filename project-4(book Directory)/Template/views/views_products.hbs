@@ -1,0 +1,88 @@
+{{>header}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   
+   .active{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    table,td,th{
+        border: 1px solid black;
+        padding: 8px;
+        margin: 25px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    form{
+         padding: 8px;
+        margin: 25px;
+        border-collapse: collapse;
+        text-align: center;
+
+    }
+</style>
+<body><br><br>
+
+  <div>
+    <button><a href="/addnewone" type="button">YOU CAN ADD PRODUCT HERE</a></button>
+  </div>
+      <div>
+        <form method="post"   action="">
+         <input type="text" placeholder="Enter book name here" name="Title"  >
+         <button type="Register">search here</button>
+        </form>
+       </div>
+    <div>
+       <table class="active">
+       <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Description</th>
+        <th>image</th>
+       </tr>
+       {{#each findbook}}
+       <tr>
+       <td>{{this.Title}}</td>
+        <td>{{this.Author}}</td>
+        <td>{{this.Description}}</td>
+        <td><img src="{{this.image}}" width="50px"   alt=""></td>
+       </tr>
+       {{/each}}
+       </table>
+    </div>
+  <div>
+    <table class="active">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Description</th>
+        <th>image</th>
+        <th>ACTION</th>
+    </tr>
+    {{#each products}}
+    <tr>
+        <td>{{this.Title}}</td>
+        <td>{{this.Author}}</td>
+        <td>{{this.Description}}</td>
+        <td><img src="{{this.image}}" width="50px"   alt=""></td>
+        <td><a href="/editone?eid={{this._id}}" type="button">EDIT</a>
+            <a href="deleteone/{{this._id}}">DELETE</a>
+        </td>
+    </tr>
+    {{/each}}
+    </table>
+    </div><br>
+   
+</body>
+</html>
+

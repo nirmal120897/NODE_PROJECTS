@@ -1,0 +1,37 @@
+{{>header}}
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+.center{
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(243, 221, 234);
+  padding: 10px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(230, 237, 198);
+  
+}    
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+<div class="center">
+    <label for="name">Title :</label>
+    <input type="text" placeholder="BOOKS TITLE" name="Title" value="{{this.Title}}"><br><br>
+    <label for="name">Author :</label>
+    <input type="text" placeholder="Author"   name="Author" value="{{this.Author}}"><br><br>
+    <label for="name">Desciption :</label>
+    <input type="text" placeholder="Description"  name="Description" value="{{this.Description}}"><br><br>
+    <input type="submit" value="ADD">
+</div>
+    </form>
+</body>
+</html>

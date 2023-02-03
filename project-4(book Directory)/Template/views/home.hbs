@@ -1,0 +1,20 @@
+
+{{>header}}
+  <div>
+    <p>
+      WELCOME TO THE BEST BOOKS DIRECTORY WORLD
+    </p>
+    <p>HERE OUR BEST COLLECTION IS AVIALABLE FOR MORE BOOKS COLLECRION REGISTER FIRST</p>
+
+  </div>
+  
+  <div class="container">
+    {{#each products}}
+    <div class="card">
+      <h1><b>{{this.Title}}</b></h1>
+      <img src="{{this.image}}"  width="50px"  alt="">
+      <h2>BOOK BY {{this.Author}}</h2>
+    </div>
+    {{/each}}
+  </div>
+{{>footer}}
