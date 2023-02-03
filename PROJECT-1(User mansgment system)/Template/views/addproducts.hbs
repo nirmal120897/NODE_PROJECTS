@@ -1,0 +1,29 @@
+
+{{>header}}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <form action="" method="POST">
+
+            
+            <h1 style="text-align: center;">Add Products</h1>
+        <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name" name="name" value="{{Product.name}}">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Price</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Price" name="price" value="{{Product.price}}">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">description</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description" value="{{Product.description}}"></textarea>
+</div>
+<input type="submit" class="btn btn-primary" value="ADD">
+</form>
+        </div>
+    </div>
+
+</div>
+{{>footer}}
